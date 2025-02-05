@@ -1,7 +1,7 @@
-import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import React from "react";
-import {Input, button} from "@heroui/react";
+import {Input} from "@heroui/react";
+import {Button} from "@heroui/react";
 
 export default function DocsPage() {
 
@@ -14,7 +14,16 @@ export default function DocsPage() {
             <Input label="Categoria" type="text" variant="bordered"/>
             <Input label="Produto" type="text" variant="bordered"/>
             <Input label="Valor" type="text" variant="bordered"/>
-            <Input label="Imagem" type="file" accept="image/*" variant="bordered"/>
+            <Input
+              accept="image/*"
+              label="Imagem"
+              type="file"
+              variant="bordered"
+            />
+          </div>
+          <div className="flex justify-center items-center gap-4">
+            <Button color="default">Voltar</Button>
+            <Button color="success">Adicionar</Button>
           </div>
         </form>
       </section>
