@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary: #ff5722; /* Cor principal */
+}
+
+@font-face {
+    font-family: 'Lactosa';
+    src: url('/fonts/Lactosa.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.footer {
+  background: rgb(37, 37, 37);
+}
